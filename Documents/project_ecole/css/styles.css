@@ -1,0 +1,298 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.pic {
+  background-image: url(./assets/images/homepage/isai-ramos-A6WQ57dzHgU-unsplash\ 1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #06348C;
+}
+
+.logo {
+  display: flex;
+  margin-bottom: 5%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2%;
+}
+.logo h1 {
+  font-size: 50px;
+  position: relative;
+  display: inline-block;
+}
+.logo h1:after {
+  content: " ";
+  width: 90%;
+  height: 2px;
+  background-color: yellow;
+  display: block;
+  margin-left: 1%;
+}
+.logo ul {
+  display: flex;
+  gap: 8rem;
+  border: 1px solid black;
+}
+
+.logotext {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 5%;
+  word-spacing: 10px;
+}
+
+.logoform {
+  margin-left: 12.5%;
+}
+.logoform input {
+  display: inline-block;
+  padding: 1%;
+  width: 40%;
+  border: 3px solid #F2B30F;
+  margin-bottom: 15%;
+}
+.logoform .join {
+  border-left: none;
+}
+
+.headerfoot {
+  background-color: rgba(39, 100, 126, 0.1);
+  color: #06348C;
+}
+.headerfoot .headfoot {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  padding-top: 2%;
+  margin: 0 auto;
+}
+.headerfoot .headfoot span {
+  display: block;
+  margin-bottom: 20%;
+  font-size: 35px;
+}
+
+/*================================================================
+Main body*/
+.maintext, .facilitiestxt {
+  color: #06348C;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.maintext h1, .facilitiestxt h1 {
+  font-size: 35px;
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*================================================================
+reuseable layouts*/
+.col-1-3 {
+  width: 29.9%;
+}
+
+.col-1-2 {
+  width: 45.3%;
+}
+
+.details {
+  margin-top: -1%;
+  border: 2px solid #F2B30F;
+  border-top: none;
+  padding: 0 4% 4% 2%;
+  line-height: 30px;
+  width: 100%;
+}
+.details img {
+  size: 100% 100%;
+}
+.details .detailhead {
+  display: flex;
+  justify-content: space-between;
+}
+.details .detailhead h3 {
+  color: #06348C;
+  font-weight: 500;
+}
+
+/*================================================================
+room style*/
+.rooms {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.roomsect {
+  margin-bottom: 2%;
+}
+
+/*================================================================
+suite style*/
+.suite {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.suite img {
+  width: 100%;
+}
+
+.suitename {
+  border: 2px solid #F2B30F;
+  border-top: none;
+  margin: -1% 0 10% 0;
+  padding: 5% 5% 5% 5%;
+  text-align: center;
+  width: 100%;
+}
+
+/*================================================================
+buttons*/
+.btn {
+  display: inline-block;
+  margin-left: 45%;
+  border: 1px solid #234B9A;
+  border-radius: 10px;
+  padding: 15px;
+  width: 15%;
+  text-align: center;
+  background-color: #234B9A;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*================================================================
+Facilities*/
+.facilitiestxt {
+  margin-top: 1%;
+}
+
+.facilities {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.facilities img {
+  width: 100%;
+}
+.facilities .status {
+  background-color: #37A335;
+  color: #fff;
+  border-radius: 20%;
+}
+.facilities .details {
+  width: 100%;
+  height: 16%;
+  padding: 0 4% 4% 2%;
+  margin-bottom: 5%;
+}
+.facilities h3 {
+  font-size: 18px;
+}
+
+/*=============================================================
+Map and Contacts==============================*/
+.backgrd {
+  background-color: rgba(39, 100, 126, 0.1);
+}
+.backgrd .map {
+  display: flex;
+}
+.backgrd .contact {
+  padding: 10% 10% 10% 10%;
+}
+.backgrd .contact h3 {
+  color: #234B9A;
+  font-size: 40px;
+  margin-bottom: 20%;
+}
+.backgrd .contact li {
+  font-size: 30px;
+  margin-bottom: 10%;
+}
+.backgrd .contact li:nth-child(4) {
+  margin-bottom: 14%;
+}
+
+/*=============================================================
+subscribe ==============================*/
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe h3 {
+  margin-top: 4%;
+  margin-bottom: 2%;
+  color: #06348C;
+  font-size: 24px;
+}
+.subscribe input {
+  padding: 10% 10%;
+}/*# sourceMappingURL=styles.css.map */
