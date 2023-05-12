@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1,
+.logosection h3, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+container {
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pic {
+  background-image: url(./images/homepage/isai-ramos-A6WQ57dzHgU-unsplash\ 1\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #06348C;
+}
+
+.logosection {
+  display: flex;
+  margin-bottom: 5%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 2%;
+}
+.logosection h1, .logosection h3 {
+  font-size: 50px;
+  position: relative;
+  display: inline-block;
+}
+.logosection h1:after, .logosection h3:after {
+  content: " ";
+  width: 90%;
+  height: 2px;
+  background-color: yellow;
+  display: block;
+  margin-top: 2%;
+}
+.logosection ul {
+  display: flex;
+  gap: 8rem;
+  border: 1px solid black;
+}
+.logosection h3 {
+  margin: 8% auto;
+  justify-self: center;
+  font-size: 70px;
+  margin-bottom: 12%;
+}
+.logosection h3:after {
+  margin-top: 15%;
+}
+
+.hero {
+  background-color: rgba(39, 100, 126, 0.1);
+  color: #06348C;
+}
+
+.heroform {
+  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+.heroform form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 2.5%;
+}
+.heroform form .input {
+  border-radius: 10px;
+  padding: 2%;
+  border: 1.5px solid grey;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #234B9A;
+  border-radius: 10px;
+  padding: 15px;
+  width: 30%;
+  text-align: center;
+  background-color: #234B9A;
+  color: #fff;
+  text-decoration: none;
+  margin: auto;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%;
+}
+.subscribe h3 {
+  margin-top: 4%;
+  margin-bottom: 2%;
+  color: #06348C;
+  font-size: 24px;
+}
+.subscribe form {
+  display: flex;
+  border: 1px solid black;
+  width: 60%;
+}
+.subscribe form .input {
+  width: 80%;
+  border-right: none;
+  border: 1.5px solid grey;
+  border-radius: 10px 0 0 10px;
+  padding-left: 3%;
+}
+.subscribe .btn {
+  border-radius: 0 10px 10px 0;
+  font-size: 20px;
+  font-weight: 400px;
+  width: 20%;
+}
+
+.footersect {
+  background-color: #06348C;
+  color: #fff;
+}
+.footersect .grid {
+  display: flex;
+  gap: 12%;
+  align-items: stretch;
+  align-items: center;
+  border: 3px solid black;
+  width: 85%;
+  padding: 2% 0 2% 5%;
+  margin: auto;
+  letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+.footersect .grid h1, .footersect .grid .logosection h3, .logosection .footersect .grid h3 {
+  font-size: 50px;
+}
+.footersect .grid h2 {
+  font-size: 25px;
+}
+.footersect .grid li {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.footersect .grid .offset {
+  border: 1px solid black;
+}
+.footersect .grid .offset li {
+  margin-top: 30px;
+}
+
+.location {
+  width: 70%;
+  margin: auto;
+}/*# sourceMappingURL=styles.css.map */
