@@ -4,7 +4,7 @@
 */
 html, body, div, span, applet, object, iframe,
 h1,
-.logosection h3, h2, h3, h4, h5, h6, p, blockquote, pre,
+.logotextcontact, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -53,11 +53,6 @@ table {
   border-spacing: 0;
 }
 
-container {
-  border: 1px solid;
-  border-radius: 50%;
-}
-
 *,
 *:before,
 *:after {
@@ -65,8 +60,25 @@ container {
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
+  border: 1px solid black;
+}
+
+.btn { /*----button style----*/
+  display: inline-block;
+  border: 1px solid #234B9A;
+  border-radius: 10px;
+  padding: 15px;
+  width: 15%;
+  text-align: center;
+  background-color: #234B9A;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btncenter {
+  margin-left: 42%;
 }
 
 .pic {
@@ -78,79 +90,231 @@ container {
 
 .logosection {
   display: flex;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 2%;
 }
-.logosection h1, .logosection h3 {
+.logosection h1, .logosection .logotextcontact {
   font-size: 50px;
   position: relative;
   display: inline-block;
 }
-.logosection h1:after, .logosection h3:after {
+.logosection h1:after, .logosection .logotextcontact:after {
   content: " ";
   width: 90%;
   height: 2px;
   background-color: yellow;
   display: block;
-  margin-top: 2%;
+  margin-left: 1%;
 }
 .logosection ul {
   display: flex;
   gap: 8rem;
   border: 1px solid black;
 }
-.logosection h3 {
-  margin: 8% auto;
-  justify-self: center;
-  font-size: 70px;
-  margin-bottom: 12%;
+
+.logoform {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  padding-top: 5%;
 }
-.logosection h3:after {
-  margin-top: 15%;
+.logoform .logotext {
+  font-size: 50px;
+  text-align: center;
+  margin: 3% 0 3% 0;
+  word-spacing: 10px;
+}
+.logoform form {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 70%;
+  border: 1px solid black;
+  margin-bottom: 10%;
+}
+.logoform form input {
+  display: inline-block;
+  padding: 1%;
+  width: 45%;
+  border: 3px solid #F2B30F;
+}
+.logoform form .join {
+  border-left: none;
+}
+.logoform form .btn {
+  border-radius: 0 10px 10px 0;
+  font-size: 15px;
+  font-weight: 100px;
+  width: 11%;
 }
 
 .hero {
   background-color: rgba(39, 100, 126, 0.1);
   color: #06348C;
 }
-
-.heroform {
-  padding-top: 5%;
+.hero .headfoot {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  font-size: 20px;
+  width: 55%;
+  justify-content: space-between;
+  padding: 2% 0 2% 0;
+  margin: 0 auto;
 }
-.heroform form {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  margin-bottom: 2.5%;
-}
-.heroform form .input {
-  border-radius: 10px;
-  padding: 2%;
-  border: 1.5px solid grey;
-}
-
-.btn {
-  display: inline-block;
-  border: 1px solid #234B9A;
-  border-radius: 10px;
-  padding: 15px;
-  width: 30%;
+.hero .headfoot span {
+  display: block;
+  margin-bottom: 20%;
+  font-size: 35px;
   text-align: center;
-  background-color: #234B9A;
-  color: #fff;
-  text-decoration: none;
-  margin: auto;
+  position: relative;
+}
+.hero .headfoot span::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  margin-top: 5%;
+  width: 100%;
+  height: 5%;
+  background: #234B9A;
 }
 
+/*================================================================
+Main body*/
+.maintext, .facilitiestxt {
+  color: #06348C;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.maintext h1, .maintext .logotextcontact, .facilitiestxt h1, .facilitiestxt .logotextcontact {
+  font-size: 35px;
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*================================================================
+reuseable layouts*/
+.col-1-3 {
+  width: 28.9%;
+}
+
+.col-1-2 {
+  width: 45.3%;
+}
+
+.details {
+  margin-top: -1%;
+  border: 2px solid #F2B30F;
+  border-top: none;
+  padding: 0 4% 4% 2%;
+  line-height: 30px;
+}
+.details img {
+  size: 100% 100%;
+}
+.details .detailhead {
+  display: flex;
+  justify-content: space-between;
+}
+.details .detailhead h3 {
+  color: #06348C;
+  font-weight: 500;
+}
+
+/*================================================================
+room style*/
+.rooms {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.roomsect {
+  margin-bottom: 2%;
+}
+
+/*================================================================
+suite style*/
+.suite {
+  padding: 0 15% 0 15%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.suite img {
+  width: 100%;
+}
+
+.suitename {
+  border: 2px solid #F2B30F;
+  border-top: none;
+  margin: -1% 0 10% 0;
+  padding: 5% 5% 5% 5%;
+  text-align: center;
+  width: 100%;
+}
+
+/*================================================================
+buttons*/
+/*================================================================
+Facilities*/
+.facilitiestxt {
+  margin-top: 1%;
+}
+
+.facilities {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.facilities img {
+  width: 100%;
+}
+.facilities .status {
+  background-color: #37A335;
+  color: #fff;
+  border-radius: 20%;
+}
+.facilities .details {
+  width: 100%;
+  height: 16%;
+  padding: 0 4% 4% 2%;
+  margin-bottom: 5%;
+}
+.facilities h3 {
+  font-size: 18px;
+}
+
+/*=============================================================
+Map and Contacts==============================*/
+.backgrd {
+  background-color: rgba(39, 100, 126, 0.1);
+}
+.backgrd .map {
+  margin-top: 2%;
+  display: flex;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+}
+.backgrd .contact {
+  border: 1px solid black;
+}
+.backgrd .contact h3 {
+  color: #234B9A;
+  font-size: 40px;
+  margin-bottom: 20%;
+}
+.backgrd .contact li {
+  font-size: 30px;
+  margin-bottom: 10%;
+}
+.backgrd .contact li:nth-child(4) {
+  margin-bottom: 14%;
+}
+
+/*=============================================================
+subscribe ==============================*/
 .subscribe {
   display: flex;
   flex-direction: column;
@@ -182,6 +346,47 @@ container {
   width: 20%;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.logotextcontact {
+  margin: 8% auto;
+  justify-self: center;
+  font-size: 70px;
+  margin-bottom: 12%;
+}
+.logotextcontact:after {
+  margin-top: 15%;
+}
+
+.heroform {
+  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+.heroform form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 2.5%;
+}
+.heroform form .input {
+  border-radius: 10px;
+  padding: 2%;
+  border: 1.5px solid grey;
+}
+
+.location {
+  width: 100%;
+}
+
 .footersect {
   background-color: #06348C;
   color: #fff;
@@ -198,7 +403,7 @@ container {
   letter-spacing: 1px;
   letter-spacing: 1px;
 }
-.footersect .grid h1, .footersect .grid .logosection h3, .logosection .footersect .grid h3 {
+.footersect .grid h1, .footersect .grid .logotextcontact {
   font-size: 50px;
 }
 .footersect .grid h2 {
@@ -214,9 +419,4 @@ container {
 }
 .footersect .grid .offset li {
   margin-top: 30px;
-}
-
-.location {
-  width: 70%;
-  margin: auto;
 }/*# sourceMappingURL=styles.css.map */
