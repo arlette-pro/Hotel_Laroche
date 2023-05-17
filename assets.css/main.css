@@ -147,7 +147,12 @@ Rooms
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.log-container {
+.container1{
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+/* .log-container {
     width: 70%;
     margin: 0 auto;
     border: 1px solid black;
@@ -159,7 +164,7 @@ Rooms
     background-image: url(./images/Bliss_Hotel/isai-ramos-A6WQ57dzHgU-unsplash\ 1\ \(1\).png);
     background-repeat: no-repeat;
     background-size: 100%;
-    /* color: #06348C; */
+    color: #06348C;
   }
   
   .logosection {
@@ -206,7 +211,7 @@ Rooms
     display: flex;
     flex-wrap: nowrap;
     width: 70%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin-bottom: 10%;
   }
   .logoform form input {
@@ -223,6 +228,85 @@ Rooms
     font-size: 15px;
     font-weight: 700;
     width: 20%;
+  } */
+  .btnlogo
+  { 
+    display: inline-block;
+    border: 1px solid #234B9A;
+    border-radius: 10px;
+    padding: 15px;
+    width: 15%;
+    text-align: center;
+    background-color: #234B9A;
+    color: #fff;
+    text-decoration: none;
+  }
+  .pic {
+    background-image: url(./images/Bliss_Hotel/isai-ramos-A6WQ57dzHgU-unsplash\ 1\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #06348C;
+  }
+  
+  .logosection {
+    display: flex;
+    padding-bottom: 10%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2%;
+  }
+  .logosection h1, .logosection .logotextcontact {
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+  }
+  .logosection h1:after, .logosection .logotextcontact:after {
+    content: " ";
+    width: 90%;
+    height: 2px;
+    background-color: yellow;
+    display: block;
+    margin-left: 1%;
+  }
+  .logosection ul {
+    display: flex;
+    gap: 8rem;
+  }
+  
+  .logoform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+  }
+  .logoform .logotext {
+    font-size: 50px;
+    text-align: center;
+    margin: 3% 0 3% 0;
+    word-spacing: 10px;
+  }
+  .logoform form {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 70%;
+    margin-bottom: 10%;
+  }
+  .logoform form input {
+    display: inline-block;
+    padding: 1%;
+    width: 45%;
+    border: 3px solid #F2B30F;
+  }
+  .logoform form .join {
+    border-left: none;
+  }
+  .logoform form .btn {
+    border-radius: 0 10px 10px 0;
+    font-size: 15px;
+    font-weight: 100px;
+    width: 11%;
   }
 /* * { 
     margin: 0;
@@ -311,7 +395,7 @@ Rooms
  .laroche-room{
     width: 70%;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* padding-bottom: 30px; */
  }
 .col-1-2{
@@ -506,7 +590,7 @@ Facilities
 .laroche{
     width: 80%;
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .main{
     display: flex;
