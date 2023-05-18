@@ -6,82 +6,28 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-// .container{
-//     width: 80%;
-//     margin: 0 auto;
-//     // border: 1px solid black;
-// }
 
-// .btn{
-//     display: inline-block;
-//     border: 1px solid #234B9A;
-//     border-radius: 10px;
-//     padding: 15px;
-//     width: 30%;
-//     text-align: center;
-//     background-color: #234B9A;
-//     color: #fff;
-//     text-decoration: none;
-//     margin: auto;
-// }
-// logosection =================================================================>
-// .pic{
-//     background-image: url(./images/homepage/isai-ramos-A6WQ57dzHgU-unsplash\ 1\ \(1\).png);
-//     background-repeat: no-repeat;
-//     background-size: 100% 100%;
-//     color: #06348C;
-   
-// }
-// .logosection{
-//     display: flex;
-//     margin-bottom: 5%;
-//     justify-content: space-between;
-//     flex-wrap: wrap;
-//     align-items: center;
-//     padding-top: 2%;
-    
-//     h1{
-//         // margin-top: 2%;
-//         font-size: 50px;
-//         position: relative;
-//         display: inline-block;
-//         // border: 1px solid white;
-    
-//         &:after{
-//             content:" ";
-//             width: 90%;
-//             height: 2px;
-//             background-color: yellow;
-//             display: block;
-//             margin-top: 2%;
-//         }
-//     }
-//     ul{
-//         display: flex;
-//         gap: 8rem;
-//         border: 1px solid black;
-//         // margin-top: 4.5%;
-//     }
-// }
     .logotextcontact{
-        @extend h1;
-        margin: 8% auto;
-        justify-self: center;
+        // @extend h1 ;
+        margin-top: 10%;
         font-size: 70px;
-        margin-bottom: 12%;
-       &:after
-       {
-            margin-top: 15%;
-       }
+        padding-bottom: 15%;
+        text-align: center;
+        
+        &:after{
+            content:" ";
+            width: 50%;
+            height: 2px;
+            background-color: yellow;
+            display: block;
+            margin-left: 1%;
+            transition: 2s;
+            margin: 2% auto;
+        }
     }
 
     
-// mainbody =================================================================>
 
-// .hero{
-//     background-color: rgba(39, 100, 126, 0.1);
-//     color: #06348C;
-// }
 .heroform{
     padding-top: 5%;
     display: flex;
@@ -113,105 +59,83 @@
     // height: 50%;
     // margin: auto;
 }
-// subscribesection ==========================================================>
-    // .subscribe{
-    //     display: flex;
-    //    flex-direction: column;
-    //    align-items: center;
-    //    padding-bottom: 2%;
 
-    //    h3{
-    //    margin-top: 4%;
-    //    margin-bottom: 2%;
-    //    color: #06348C;
-    //    font-size: 24px;
-    //    }
-    //    form{
-    //     display: flex;
-    //     border: 1px solid black;
-    //     width: 60%;
-    //     .input{
-    //         width: 80%;
-    //         border-right: none;
-    //         border: 1.5px solid grey;
-    //         border-radius: 10px 0 0 10px;
-    //         padding-left: 3%;
-
-    //     }
-        
-    //    }
-    //    .btn{
-    //     border-radius: 0 10px 10px 0;
-    //     font-size: 20px;
-    //     font-weight: 400px;
-    //     width: 20%;
-        
-    //    }
-
-    // }
 // myfooter ==================================================================>
-    .footersect{
-        background-color: #06348C;
-        color: #fff;
-       
-        .grid{
-            display: flex;
-           
-            gap: 12%;
-            align-items: stretch;
-            align-items: center;
-            border: 3px solid black;
-            width: 85%;
-            padding: 2% 0 2% 5%;
-            margin: auto;
-            letter-spacing: 1px;
-            letter-spacing: 1px;    
-            h1{
-                font-size: 50px;
-                
-
+            footer {
+                background-color: #0e51fa;
+                padding: 70px 0;
             }
-            h2{
-                font-size: 25px;
-                
-
-            }
-            li{
-                list-style: none;
-                margin-top: 20px;
-                font-size: 20px;
-                
-            }
-        
-            .offset{
-                border: 1px solid black;
-                li {
-                    margin-top: 30px;
-                }
-            }
-           
-        }
-            }
-    //     .grid{
-    //         display: flex;
-    //         width: 85%;
-    //         padding: 2% 0 2% 5%;
-            // margin: auto;
             
-    //         h1{
-    //             font-size: 45px;
-    //         }
-    //         h2{
-    //             font-size: 25px;
-    //         }
-    //         li{
-                // margin-top: 20px;
-    //         }
-        
-
-    //     th,td{
-    //         border: 1px solid black;
-    //         width: 350px;
-    //     }
-    // }
+            .row {
+                display: flex;
+                flex-wrap: wrap; 
+                justify-content: space-between;
+                
+            }
+            
+            ul {
+                list-style: none;
+            }
+            .footer-row {
+                width: 25%;
+                padding: 0 15px;
+                
+            }
+            
+            .footer-row h4 {
+                font-size: 18px;
+                color: #ffffff;
+                text-transform: capitalize;
+                margin-bottom: 35px;
+                font-weight: 700;
+                position: relative;
+            }
+            
+            .footer-row h3 {
+                font-size: 18px;
+                color: #ffffff;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                font-size: 30px;
+                font-weight: 700;
+                position: relative;
+            }
+            
+            .footer-row ul li:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            
+            .footer-row ul li a {
+                font-size: 16px;
+                text-transform: capitalize;
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: 300;
+                color: #bbbbbb;
+                display: block;
+            
+            }
+            
+            .footer-row ul li a:hover {
+                color: #ffffff;
+                padding-left: 8px;
+            }
+            
+            .footer-row .social-links a {
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                background-color: rgba(233, 227, 227, 0.2);
+                margin: 0 10px 10px 0;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 50%;
+                color: #ffffff;
+            }
+            
+            .footer-row .social-links a:hover {
+                color: #24262b;
+                background-color: #ffffff;
+            }
+    
     
