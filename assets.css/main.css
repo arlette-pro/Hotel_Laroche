@@ -229,8 +229,13 @@ Rooms
     font-weight: 700;
     width: 20%;
   } */
-  .btnlogo
-  { 
+  .logoimg{
+    width: 40%;
+    height: 15px;
+    display: inline-block;
+    padding-left: 6px;
+  }
+  .btnlogo{ 
     display: inline-block;
     border: 1px solid #234B9A;
     border-radius: 10px;
@@ -240,6 +245,7 @@ Rooms
     background-color: #234B9A;
     color: #fff;
     text-decoration: none;
+    
   }
   .pic {
     background-image: url(./images/Bliss_Hotel/isai-ramos-A6WQ57dzHgU-unsplash\ 1\ \(1\).png);
@@ -308,66 +314,7 @@ Rooms
     font-weight: 100px;
     width: 11%;
   }
-/* * { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.header {
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/Bliss_Hotel/isai-ramos-A6WQ57dzHgU-unsplash\ 1\ \(1\).png);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.img-cmr
-{
-    width: 20px;
-    height: 20px;
-}
-
-.navbar {
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a {
-    font-size: 30px;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-/*.navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-} */
-
-/* .navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-} */
-/* .navbar ul li::after{ 
-    content: '';
-    height: 3px;
-    widows: o;
-    background: #009688;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-} */
-/*.navbar ul li:hover::after{
-    width: 100%;
- } */
 
 /*========================================
 Rooms
@@ -377,41 +324,34 @@ Rooms
     width: 70%;
     margin: 0 auto;
     /* border: 1px solid black; */
+    /* background-color: #bbbbbb; */
   }
+
   
-  /* .btn {  
-    display: inline-block;
-    border: 1px solid #234B9A;
-    border-radius: 10px;
-    padding: 15px;
-    width: 30%;
-    text-align: center;
-    background-color: #234B9A;
-    color: #fff;
-    text-decoration: none;
-    margin: auto;
-  /* } */
-  
- .laroche-room{
+ .laroche{
     width: 70%;
     margin: 0 auto;
     /* border: 1px solid black; */
     /* padding-bottom: 30px; */
  }
-.col-1-2{
+ .col-1-2{ 
     width: 34%;
     display: flex;
     justify-content: space-between;
-}
+} 
 /* rooms style */
-.roomsect{
+.container-roomsect{
     margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
 }
 .room{
     display: flex;
-    justify-content:space-between;
-    padding-left: 5px;
-    
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    padding: 30px 0 30px 5px;
+    /* margin: 30px 0 30px 0; */
+    margin: 0 auto;
 }
 
 .image-room{
@@ -419,163 +359,83 @@ Rooms
 }
 /*=======
 ========= details */
-.details .detailhead{
+.detailhead{
 display: flex;
 justify-content: space-between;
 padding-top: 20px;
 }
 .room-text{
-    padding-top: 20px;
+    padding-top: 60px;
 }
-.details .detail-foot{
+.room-text p{
+    line-height: 30px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+.wrap{
+    /* border: 2px solid black; */
+    border: 1px solid #F2B30F;
+    width: 57.8%;
+    border-left:0 ;
+}
+.wrap .detail-foot{
     display: flex;
 justify-content: space-between;
-padding-top: 20px;
+padding-top: 40px;
+padding-left: 30px;
 }
-.details{
-    border: 2px solid #F2B30F;
-    width: 35%;
-    margin-left: 0;
-    border-left: 0;
-    margin-right: 5%; 
+.detailhead h3{
+    font-weight: 700;
+    font-size: 50px;
+    color: #06348C;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.detail-foot p{
+    font-weight: 700;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 25px;
+}
+
+.rating{
+    font-size: 24px;
+    padding-top: 40px;
+    padding-right: 20px;
 }
 /* =============
 subscribe========= */
-.subscribe {
+.container-subscribe{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 2%;
+    background-color: rgba(39, 100, 126, 0.1);
   }
-  .subscribe h3 {
+ 
+  .container-subscribe h3 {
     margin-top: 4%;
     margin-bottom: 2%;
     color: #06348C;
     font-size: 24px;
   }
-  .subscribe form {
+  .container-subscribe form {
     display: flex;
     /* border: 1px solid black; */
     width: 50%;
     text-align: center;
   }
-  .subscribe form .input {
+  .container-subscribe form .input {
     width: 80%;
     border-right: none;
     border: 1.5px solid #F2B30F;
     border-radius: 10px 0 0 10px;
     padding-left: 3%;
   }
-  .subscribe .hero-btn{
+  .container-subscribe .hero-btn{
     font-weight: 700;
   }
-
-  
-
-
-
-
-/*.text-box {
-    width: 90%;
-    color: blue;
-    position: absolute;
-    text-align: center;
-    bottom: 85%;
-    left: 5;
-}
-
-.text-box h1 {
-    font-size: 30px;
-    text-align: center;
-}
-
-.text-box box {
-    position: absolute;
-    top: 20;
-    text-align: center;
-}
-/* style for image */
-/*.room-style {
-    min-height: 100%;
-    width: 100%;
-    display: inline-block;
-    display: flex;
-    text-align: justify;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.room-style h1 {
-    text-decoration: solid red;
-    font-size: 400;
-    font-size: 24px;
-
-}
-.call{
-    display: flex;
-    justify-content: space-between;
-}
-
-.div-text span{
-    display: inline-block;
-    width: 80px;
-    height: 100px;
-    /* padding: 22px; */
-
-/*.img-room {
-    height: 50%;
-    width: 50%;
-    position: relative;
-    /* left: 24; */
-
-
-/*.div-text {
-    text-align: justify;
-    position: relative;
-    left: 10;
-
-
-}
-
-.div-text p {
-    position: relative;
-    left: 2;
-}
-
-.hero-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    padding: 12px 34px;
-    font-size: 13px;
-}
-
-.hero-btn1 {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    padding: 12px 34px;
-    font-size: 13px;
-    text-align: center;
-}
-
-.hero-btn {
-    border: 1px solid #fff;
-    transition: 1s;
-    background-color: blue;
-}
-
-.text {
-    text-align: center;
-}
-
-.text p {
-    color: blue;
-    padding-bottom: 20px;
-    font-size: 24px;
-}*/
 
 /*
 ===============================
@@ -616,14 +476,18 @@ Facilities
 .text1{
     margin-top: -2%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border: 2px solid blue;
     border-top: none;
     padding-bottom: 10px;
+    padding-left: 40px;
     width: 100%;
     height: 150px;
     line-height: 30px;
     
+}
+.fac{
+    padding-right: 20px;
 }
 .text-fac p{
     font-size: 24px;
@@ -653,15 +517,28 @@ button
     color: #fff;
     border-radius: 5px;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 24px;
     font-weight: 700;
-}
-.hero-btn {
-    /* border: 1px solid #fff; */
-    transition: 1s;
+    text-align: center;
     background-color: #234B9A;
-    font-weight: 700;
 }
+/* .fac-btn{
+    width: 17%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 20%;
+    padding: 12px 30px;
+    margin-top: 120px;
+    background-color: green;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+}
+.fac-btn a{
+    margin-bottom: 100px;
+
+} */
+
 .fac-btn{
     border: 1px solid #fff;
     background-color: green;
@@ -671,8 +548,9 @@ button
 .fac-btn{
     text-decoration: none;
     display: inline-block;
-    border-radius: 10px;
-    padding: 12px 34px;
+    border-radius: 20px;
+    padding: 5px 14px;
+    
     color: #fff;
 
 }
@@ -683,6 +561,7 @@ margin-bottom: 20px;
 color: #ffffff;
 border: 1px solid #fff;
 border-radius: 5px;
+text-align: center;
 font-weight: 700;
 width: 100%;
 }
@@ -694,6 +573,7 @@ width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    font-weight: 700;
 } 
 .btn a{
     font-weight: 700;
@@ -718,9 +598,9 @@ text-decoration: none;
 footer
 ========================
  */
-body {
+/* body {
     line-height: 24px;
-}
+} */
 *{
     margin: 0;
     padding: 0;
